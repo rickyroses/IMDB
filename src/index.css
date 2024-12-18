@@ -11,10 +11,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Quicksand", serif;
 }
 
+*{
+  font-family: "Quicksand", serif;
+}
+
+
 h1{
-  font-weight: 800 !important;
+  font-weight: 900 !important;
   text-transform: uppercase;
 }
 
@@ -61,8 +68,12 @@ button:focus-visible {
 
 footer{
   width: 103%;
-  margin: 0 0 0 -10rem !important;
+  margin: 0 0 0 -12rem !important;
   color: #1a1a1a !important;
+}
+
+footer.bg-warning{
+  background-color: #dadada !important;
 }
 
 footer p{
@@ -75,14 +86,23 @@ footer p{
 }
 
 .card.bg-info{
-  background: #f0f0f0 !important;
-  border:1px solid #dadada;
-  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  /*background: #f0f0f0 !important;*/
+  background: transparent !important;
+  border:0;
+  /*border:1px solid #dadada;*/
+  
 
 }
 
-.card-img-top{
-  border-radius: 10px;
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  width: 100% !important;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px !important;
+  background: #fff !important;
+  border: 1px solid #dadada;
+  border-bottom: 0;
+  padding: 20px 20px 10px 20px;
 }
 
 .cajas_row{
@@ -93,10 +113,99 @@ input[type="text" i] {
 padding: 7px 40px ;
 border-radius: 10px;
 text-align: left;
-border:2px solid #ffc107;
+border:1px solid #ffc107;
 color: #1a1a1a !important;
+width:50%;
+background: #fce19f;
 }
 
+.card-body {
+  padding: 30px 10px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #dadada;
+  border-top: 0;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px !important;
+}
+
+.card-title{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input[type="text" i]::placeholder {
+  color: #1a1a1a !important;
+  }
+
+.vermas, .btn.btn-secondary{
+  background:#f76d0f;
+  border:0;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 10px 0;
+  padding: 10px 30px !important;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open{
+  position: absolute;
+    inset: 100px !important;
+    border: 1px solid rgb(204, 204, 204);
+    background: #f8f8f8 !important;
+    overflow: auto;
+    border-radius: 10px !important;
+    outline: none;
+    padding: 100px !important;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+;
+    justify-content: center;
+    vertical-align: middle;
+    align-content: center;
+    align-items: center;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open h2,
+.ReactModal__Content.ReactModal__Content--after-open p {
+  color:#212529;
+}
+
+
+.ReactModal__Content.ReactModal__Content--after-open h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open .col-md-8{
+  padding: 60px;
+}
+
+.img-fluid{
+  opacity: 0.8;
+  -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+border:8px solid #fff;
+box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px !important;
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open{
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open .btn.btn-secondary{
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

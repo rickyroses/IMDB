@@ -8,6 +8,7 @@ function MovieCard({ movie, onMovieSelect }) {
       <img src={imageUrl} className="card-img-top" alt={movie.title} />
       <div className="card-body">
         <h5 className="card-title">{movie.title}</h5> 
+        <button class="vermas" onClick={() => onMovieSelect(movie)}>Ver más</button>
       </div>
     </div>
   );
